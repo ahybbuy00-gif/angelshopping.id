@@ -1,0 +1,65 @@
+window.location.href="https://wa.me/8613913882013";
+window.location.href="https://wa.me/8613913882013";
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AngelShopping.id</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f2f2f2}
+header{background:#ff5fa2;color:white;padding:15px;text-align:center}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;padding:15px}
+.card{background:white;border-radius:10px;padding:10px;text-align:center}
+.card img{width:100%;border-radius:8px}
+button{background:#ff5fa2;color:white;border:none;padding:8px;width:100%;border-radius:5px}
+.cart{position:fixed;bottom:10px;right:10px;background:white;padding:10px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.2)}
+footer{text-align:center;background:#333;color:white;padding:10px;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>AngelShopping.id</h2>
+<p>Belanja Apa Aja Ada (support UMKM)✨</p>
+</header>
+
+<section class="products">
+<div class="card">
+<img src="https://i.ibb.co/CTpRf07/poto.jpg" width="300">
+<h4>escrim</h4>
+<p>100rmb</p>
+<button onclick="add('Produk 1')">Tambah</button>
+</div>
+
+<div class="card">
+<img src="foto2.jpg">
+<h4>tunggu mood</h4>
+<p>-</p>
+<button onclick="add('Produk 2')">Tambah</button>
+</div>
+</section>
+
+<div class="cart">
+🛒 Keranjang: <span id="count">0</span><br><br>
+<button onclick="checkout()">Checkout</button>
+</div>
+
+<footer>© 2025 AngelShopping.id</footer>
+
+<script>
+let total=0;
+function add(nama){
+ total++;
+ document.getElementById("count").innerText=total;
+ alert(nama+" masuk keranjang");
+}
+function checkout(){
+ window.location.href="https://wa.me/8613913882013";
+}
+</script>
+
+</body>
+</html>
